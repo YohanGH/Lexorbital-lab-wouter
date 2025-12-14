@@ -71,25 +71,40 @@ function Header() {
           </NavLink>
         </nav>
 
-        {/* Cas Concret pour LexOrbital - Mise en avant à droite */}
-        <Link
-          href="/version-demo"
-          className={`
-            px-4 py-2 rounded-lg font-semibold text-sm
-            transition-all duration-200
-            ${
-              isVersionContextActive
-                ? "bg-[var(--color-primary)] text-white shadow-lg shadow-[var(--color-primary)]/50 scale-105"
-                : "bg-gradient-to-r from-yellow-400 to-orange-500 text-gray-900 hover:from-yellow-300 hover:to-orange-400 hover:shadow-lg hover:scale-105"
-            }
-            border-2 border-yellow-400
-            flex items-center gap-2
-            whitespace-nowrap
-          `}
-        >
-          <span className="text-lg">🎯</span>
-          <span>Cas Concret LexOrbital</span>
-        </Link>
+        {/* Right side actions */}
+        <div className="flex items-center gap-3">
+          {/* GitHub Link */}
+          <a
+            href="https://github.com/YohanGH/Lexorbital-lab-wouter?tab=readme-ov-file"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-3 py-2 rounded-lg font-semibold text-sm bg-gray-700 hover:bg-gray-600 text-white transition-all duration-200 flex items-center gap-2 whitespace-nowrap border border-gray-600"
+            title="View on GitHub"
+          >
+            <span>🔗</span>
+            <span>GitHub</span>
+          </a>
+
+          {/* Cas Concret pour LexOrbital - Mise en avant à droite */}
+          <Link
+            href="/version-demo"
+            className={`
+              px-4 py-2 rounded-lg font-semibold text-sm
+              transition-all duration-200
+              ${
+                isVersionContextActive
+                  ? "bg-[var(--color-primary)] text-white shadow-lg shadow-[var(--color-primary)]/50 scale-105"
+                  : "bg-gradient-to-r from-yellow-400 to-orange-500 text-gray-900 hover:from-yellow-300 hover:to-orange-400 hover:shadow-lg hover:scale-105"
+              }
+              border-2 border-yellow-400
+              flex items-center gap-2
+              whitespace-nowrap
+            `}
+          >
+            <span className="text-lg">🎯</span>
+            <span>Cas Concret LexOrbital</span>
+          </Link>
+        </div>
       </div>
 
       <div className="mt-3 text-sm text-white/90 flex items-center gap-2">

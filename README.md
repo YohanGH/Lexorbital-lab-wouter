@@ -1,15 +1,24 @@
 # LexOrbital-Lab Wouter
 
-**Projet de démonstration et d'apprentissage** — Exemples complets d'utilisation de [Wouter](https://github.com/molefrog/wouter) avec React.
+**Demonstration and Learning Project** — Complete examples of using [Wouter](https://github.com/molefrog/wouter) with React.
 
-Ce projet fait partie de l'écosystème **LexOrbital-Lab** et sert de référence pour la communauté sur les patterns de routing avec Wouter.
+This project is part of the **LexOrbital-Lab** ecosystem and serves as a reference for the community on routing patterns with Wouter.
 
-## 🎯 Objectif
+## ⚠️ Project Status
 
-Fournir des exemples pratiques et complets pour :
-- Comprendre les concepts de base de Wouter
-- Apprendre les patterns avancés (nesting, redirects, switches)
-- Voir des cas d'usage réels (dashboards, e-commerce, comptes utilisateurs)
+**Maintenance discontinued as of December 2024**
+
+This repository was created as a **test/unblocking exercise** and is now archived. It is left available for anyone who wants to learn from it.
+
+**Repository:** [GitHub - YohanGH/Lexorbital-lab-wouter](https://github.com/YohanGH/Lexorbital-lab-wouter?tab=readme-ov-file)
+
+## 🎯 Objective
+
+Provide practical and complete examples for:
+
+- Understanding Wouter's core concepts
+- Learning advanced patterns (nesting, redirects, switches)
+- Seeing real-world use cases (dashboards, e-commerce, user accounts)
 
 ## 🚀 Technologies
 
@@ -19,18 +28,64 @@ Fournir des exemples pratiques et complets pour :
 - Wouter (routing)
 - Tailwind CSS v4
 
-Currently, two official plugins are available:
+## 📚 Available Examples
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Core Routing Concepts
 
-## React Compiler
+- **Route Component**: Basic routing with props, render props, and optional parameters
+- **Link Component**: Navigation links with active states and custom behaviors
+- **Switch Component**: Exclusive routing with fallback handling
+- **Redirect Component**: Programmatic navigation and conditional redirects
+- **Router Component**: Advanced configuration with base paths and custom hooks
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+### Business Use Cases
 
-Note: This will impact Vite dev & build performances.
+- **Admin Dashboard**: Nested routing for administrative interfaces
+- **E-commerce Layout**: Product catalog and shopping cart routing
+- **User Account**: Profile and settings management with nested routes
 
-## Expanding the ESLint configuration
+### Version Routing Demo
+
+A concrete example solving the versioning router problem from lexorbital-core, demonstrating how to handle multiple API versions in a single application.
+
+## 🛠️ Development
+
+### Prerequisites
+
+- Node.js >= 20
+- pnpm >= 9
+
+### Setup
+
+```bash
+# Install dependencies
+pnpm install
+
+# Start development server
+pnpm dev
+
+# Build for production
+pnpm build
+
+# Preview production build
+pnpm preview
+```
+
+### Available Scripts
+
+- `pnpm dev` - Start development server
+- `pnpm build` - Build for production
+- `pnpm preview` - Preview production build
+- `pnpm lint` - Run ESLint
+- `pnpm format` - Format code with Prettier
+
+## 📖 React Compiler
+
+The React Compiler is enabled in this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+
+**Note:** This will impact Vite dev & build performance.
+
+## 🔧 Expanding the ESLint Configuration
 
 If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
 
@@ -90,3 +145,20 @@ export default defineConfig([
   },
 ])
 ```
+
+## 🌐 Live Demo
+
+Visit the live demo: [yohangh.github.io/Lexorbital-lab-wouter/](https://yohangh.github.io/Lexorbital-lab-wouter/)
+
+## 📝 License
+
+MIT License
+
+## 🙏 Acknowledgments
+
+- [Wouter](https://github.com/molefrog/wouter) - A tiny router for React
+- [LexOrbital](https://github.com/YohanGH) - The parent ecosystem
+
+---
+
+**Note:** This project is archived and no longer maintained. Feel free to use it as a learning resource!
