@@ -84,7 +84,9 @@ function AdminDashboard() {
             <p className="text-[var(--color-text-light)] mb-2">
               Vue d'ensemble de l'administration
             </p>
-            <p className="text-[var(--color-text-light)]">Statistiques, graphiques, etc.</p>
+            <p className="text-[var(--color-text-light)]">
+              Statistiques, graphiques, etc.
+            </p>
           </Card>
         </Route>
 
@@ -184,7 +186,9 @@ function AdminDashboard() {
             <h1 className="text-2xl font-bold text-[var(--color-text)] mb-4">
               Paramètres Admin
             </h1>
-            <p className="text-[var(--color-text-light)]">Configuration de l'application</p>
+            <p className="text-[var(--color-text-light)]">
+              Configuration de l'application
+            </p>
           </Card>
         </Route>
 

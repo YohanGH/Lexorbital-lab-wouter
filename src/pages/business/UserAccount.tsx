@@ -54,7 +54,9 @@ function UserAccount() {
 
         {/* EXEMPLE CRUCIAL : Navigation absolue avec ~ */}
         <div className="mt-12 pt-8 border-t border-white/20">
-          <p className="text-xs text-[var(--color-text-light)] mb-2">Navigation globale :</p>
+          <p className="text-xs text-[var(--color-text-light)] mb-2">
+            Navigation globale :
+          </p>
           <div className="flex flex-col gap-2">
             <Link
               href="~/home"
@@ -106,7 +108,9 @@ function UserAccount() {
             <h1 className="text-2xl font-bold text-[var(--color-text)] mb-4">
               Tableau de bord
             </h1>
-            <p className="text-[var(--color-text-light)] mb-6">Bienvenue dans votre compte</p>
+            <p className="text-[var(--color-text-light)] mb-6">
+              Bienvenue dans votre compte
+            </p>
             <div className="mt-8">
               <h3 className="text-lg font-semibold text-[var(--color-text)] mb-4">
                 Actions rapides :
@@ -225,7 +229,9 @@ function UserAccount() {
               <h1 className="text-2xl font-bold text-[var(--color-text)] mb-4">
                 Commande #{params.orderId}
               </h1>
-              <p className="text-[var(--color-text-light)] mb-6">Détails de la commande</p>
+              <p className="text-[var(--color-text-light)] mb-6">
+                Détails de la commande
+              </p>
               <Alert variant="info" className="mb-6">
                 <h3 className="font-semibold mb-2">
                   💡 Exemple concret du préfixe ~
@@ -278,7 +284,9 @@ function UserAccount() {
             <h1 className="text-2xl font-bold text-[var(--color-text)] mb-4">
               Paramètres
             </h1>
-            <p className="text-[var(--color-text-light)]">Configuration de votre compte</p>
+            <p className="text-[var(--color-text-light)]">
+              Configuration de votre compte
+            </p>
           </Card>
         </Route>
       </main>

@@ -23,7 +23,8 @@ function CustomButton({
   const baseClasses =
     "px-6 py-3 border-none rounded-md cursor-pointer text-base font-semibold transition-colors duration-200";
   const variantClasses = {
-    primary: "bg-[var(--color-primary)] text-white hover:bg-[var(--color-primary-light)]",
+    primary:
+      "bg-[var(--color-primary)] text-white hover:bg-[var(--color-primary-light)]",
     secondary: "bg-[#6B7280] text-white hover:bg-[#4B5563]",
   };
 

@@ -201,7 +201,9 @@ function DashboardPage() {
       <h3 className="text-lg font-semibold text-[var(--color-text)] mb-4">
         ✅ Dashboard
       </h3>
-      <p className="text-[var(--color-text-light)]">Bienvenue sur votre dashboard.</p>
+      <p className="text-[var(--color-text-light)]">
+        Bienvenue sur votre dashboard.
+      </p>
     </Card>
   );
 }
@@ -245,7 +247,9 @@ function SuccessPage() {
 
   return (
     <Card>
-      <h3 className="text-lg font-semibold text-[var(--color-text)] mb-4">✅ Succès</h3>
+      <h3 className="text-lg font-semibold text-[var(--color-text)] mb-4">
+        ✅ Succès
+      </h3>
       {state && (
         <Alert variant="success" className="mt-4">
           <p className="font-semibold mb-2">

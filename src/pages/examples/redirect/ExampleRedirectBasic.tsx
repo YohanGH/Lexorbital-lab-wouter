@@ -85,7 +85,9 @@ function ExampleRedirectBasic() {
                 <h3 className="text-lg font-semibold text-[var(--color-text)] mb-2">
                   Dashboard
                 </h3>
-                <p className="text-[var(--color-text-light)]">Page principale du dashboard</p>
+                <p className="text-[var(--color-text-light)]">
+                  Page principale du dashboard
+                </p>
               </div>
             </Route>
             <Route path="/redirect/home">

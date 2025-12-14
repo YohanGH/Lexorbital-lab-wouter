@@ -55,11 +55,17 @@ function EcommerceLayout() {
 
         {/* Breadcrumb basé sur la location relative */}
         <nav className="mb-4 text-sm text-[var(--color-text-light)]">
-          <Link href="~/home" className="text-[var(--color-primary)] hover:underline">
+          <Link
+            href="~/home"
+            className="text-[var(--color-primary)] hover:underline"
+          >
             Home
           </Link>{" "}
           /{" "}
-          <Link href="/shop" className="text-[var(--color-primary)] hover:underline">
+          <Link
+            href="/shop"
+            className="text-[var(--color-primary)] hover:underline"
+          >
             Shop
           </Link>
           {location !== "/" && location !== "/shop" && (
@@ -95,7 +101,9 @@ function EcommerceLayout() {
                 <h3 className="text-lg font-semibold text-[var(--color-text)] mb-2">
                   👕 Vêtements
                 </h3>
-                <p className="text-[var(--color-text-light)] text-sm">Mode et accessoires</p>
+                <p className="text-[var(--color-text-light)] text-sm">
+                  Mode et accessoires
+                </p>
               </Link>
               <Link
                 href="/shop/books"
@@ -104,7 +112,9 @@ function EcommerceLayout() {
                 <h3 className="text-lg font-semibold text-[var(--color-text)] mb-2">
                   📚 Livres
                 </h3>
-                <p className="text-[var(--color-text-light)] text-sm">Romans, guides, etc.</p>
+                <p className="text-[var(--color-text-light)] text-sm">
+                  Romans, guides, etc.
+                </p>
               </Link>
             </div>
           </Card>
@@ -197,7 +207,9 @@ function EcommerceLayout() {
                 <h3 className="text-xl font-semibold text-[var(--color-text)] mb-4">
                   Phones
                 </h3>
-                <p className="text-[var(--color-text-light)]">Liste des téléphones</p>
+                <p className="text-[var(--color-text-light)]">
+                  Liste des téléphones
+                </p>
               </Card>
             </Route>
 
@@ -206,7 +218,9 @@ function EcommerceLayout() {
                 <h3 className="text-xl font-semibold text-[var(--color-text)] mb-4">
                   Tablets
                 </h3>
-                <p className="text-[var(--color-text-light)]">Liste des tablettes</p>
+                <p className="text-[var(--color-text-light)]">
+                  Liste des tablettes
+                </p>
               </Card>
             </Route>
           </Card>
@@ -245,7 +259,9 @@ function EcommerceLayout() {
               <h3 className="text-xl font-semibold text-[var(--color-text)] mb-4">
                 Produit : {params.productId}
               </h3>
-              <p className="text-[var(--color-text-light)] mb-4">Détails du vêtement</p>
+              <p className="text-[var(--color-text-light)] mb-4">
+                Détails du vêtement
+              </p>
               <Button variant="ghost" size="sm" asLink href="/shop/clothing">
                 ← Retour
               </Button>
@@ -256,8 +272,12 @@ function EcommerceLayout() {
         {/* Catégorie Livres */}
         <Route path="/books">
           <Card>
-            <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Livres</h2>
-            <p className="text-[var(--color-text-light)]">Notre sélection de livres</p>
+            <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">
+              Livres
+            </h2>
+            <p className="text-[var(--color-text-light)]">
+              Notre sélection de livres
+            </p>
           </Card>
         </Route>
       </div>

@@ -89,19 +89,25 @@ function ExampleSwitchRealWorld() {
                     <h4 className="font-semibold text-[var(--color-text)] mb-2">
                       Ventes
                     </h4>
-                    <p className="text-3xl font-bold text-[var(--color-primary)]">€12,345</p>
+                    <p className="text-3xl font-bold text-[var(--color-primary)]">
+                      €12,345
+                    </p>
                   </Card>
                   <Card>
                     <h4 className="font-semibold text-[var(--color-text)] mb-2">
                       Utilisateurs
                     </h4>
-                    <p className="text-3xl font-bold text-[var(--color-primary)]">1,234</p>
+                    <p className="text-3xl font-bold text-[var(--color-primary)]">
+                      1,234
+                    </p>
                   </Card>
                   <Card>
                     <h4 className="font-semibold text-[var(--color-text)] mb-2">
                       Commandes
                     </h4>
-                    <p className="text-3xl font-bold text-[var(--color-primary)]">567</p>
+                    <p className="text-3xl font-bold text-[var(--color-primary)]">
+                      567
+                    </p>
                   </Card>
                 </div>
               </Card>
@@ -113,7 +119,9 @@ function ExampleSwitchRealWorld() {
                 <h3 className="text-xl font-semibold text-[var(--color-text)] mb-4">
                   Analytics
                 </h3>
-                <p className="text-[var(--color-text-light)] mb-2">Page d'analytics dédiée.</p>
+                <p className="text-[var(--color-text-light)] mb-2">
+                  Page d'analytics dédiée.
+                </p>
                 <p className="text-green-700 text-sm font-semibold">
                   ✅ Cette route spécifique est atteinte pour
                   /switch/dashboard/analytics
@@ -146,7 +154,9 @@ function ExampleSwitchRealWorld() {
                 <h3 className="text-xl font-semibold text-[var(--color-text)] mb-4">
                   Paramètres
                 </h3>
-                <p className="text-[var(--color-text-light)]">Configuration du dashboard.</p>
+                <p className="text-[var(--color-text-light)]">
+                  Configuration du dashboard.
+                </p>
               </Card>
             </Route>
 
@@ -156,7 +166,9 @@ function ExampleSwitchRealWorld() {
                 <h3 className="text-xl font-semibold text-[var(--color-text)] mb-4">
                   Liste des utilisateurs
                 </h3>
-                <p className="text-[var(--color-text-light)] mb-4">Gestion des utilisateurs.</p>
+                <p className="text-[var(--color-text-light)] mb-4">
+                  Gestion des utilisateurs.
+                </p>
                 <ul className="list-disc list-inside space-y-2 text-[var(--color-text-light)]">
                   <li>
                     <Link

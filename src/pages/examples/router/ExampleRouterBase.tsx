@@ -189,7 +189,9 @@ function BasePathExample() {
             <p className="text-[var(--color-text-light)] mb-2">
               Bienvenue dans l'app avec base path
             </p>
-            <p className="text-[var(--color-text-light)]">Naviguez vers /dashboard ou /users</p>
+            <p className="text-[var(--color-text-light)]">
+              Naviguez vers /dashboard ou /users
+            </p>
           </Card>
         </Route>
       </Switch>

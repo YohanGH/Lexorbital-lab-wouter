@@ -141,7 +141,9 @@ function SSRSimulationExample() {
   return (
     <div>
       <Card className="mb-4">
-        <p className="text-[var(--color-text-light)] mb-4">Simulez différents chemins SSR :</p>
+        <p className="text-[var(--color-text-light)] mb-4">
+          Simulez différents chemins SSR :
+        </p>
         <div className="flex gap-2 flex-wrap mb-4">
           <Button
             variant="ghost"

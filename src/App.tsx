@@ -38,13 +38,14 @@ import ExampleRouterBase from "./pages/examples/router/ExampleRouterBase";
 import ExampleRouterAroundNav from "./pages/examples/router/ExampleRouterAroundNav";
 import ExampleRouterSSR from "./pages/examples/router/ExampleRouterSSR";
 import ExampleRouterCustom from "./pages/examples/router/ExampleRouterCustom";
+import VersionRouter from "./pages/version-routing-demo/VersionRouter";
 
 function App(): JSX.Element {
   return (
-    <>
+    <div className="min-h-screen flex flex-col">
       <Header />
 
-      <main className="max-w-6xl mx-auto px-4 py-8">
+      <main className="flex-1 max-w-6xl w-full mx-auto px-4 py-8">
         <Switch>
           {/* Page d'accueil */}
           <Route path="/home">
@@ -271,6 +272,32 @@ function App(): JSX.Element {
             <ExampleRouterCustom />
           </Route>
 
+          {/* Version Routing Demo - Aiguillage des versions */}
+          {/* Toutes les routes de version sont gérées par VersionRouter */}
+          <Route path="/version-demo">
+            <VersionRouter />
+          </Route>
+          <Route path="/v1/*">
+            <VersionRouter />
+          </Route>
+          <Route path="/v2/*">
+            <VersionRouter />
+          </Route>
+          {/* Routes pour v2.5 : exacte et avec wildcard */}
+          <Route path="/v2.5">
+            <VersionRouter />
+          </Route>
+          <Route path="/v2.5/*">
+            <VersionRouter />
+          </Route>
+          {/* Routes pour v3 : exacte et avec wildcard */}
+          <Route path="/v3">
+            <VersionRouter />
+          </Route>
+          <Route path="/v3/*">
+            <VersionRouter />
+          </Route>
+
           {/* Redirect root to home */}
           <Route path="/">
             <Redirect to="/home" />
@@ -301,7 +328,7 @@ function App(): JSX.Element {
       </main>
 
       <Footer />
-    </>
+    </div>
   );
 }
 
