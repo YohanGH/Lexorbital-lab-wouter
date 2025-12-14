@@ -6,7 +6,7 @@ This project is part of the **LexOrbital-Lab** ecosystem and serves as a referen
 
 ## ⚠️ Project Status
 
-**Maintenance discontinued as of December 2024**
+**Maintenance discontinued as of December 2025**
 
 This repository was created as a **test/unblocking exercise** and is now archived. It is left available for anyone who wants to learn from it.
 
