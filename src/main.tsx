@@ -8,8 +8,7 @@ import App from "./App.tsx";
 // Base path for GitHub Pages
 // Must match the base path in vite.config.ts
 const repoName = "Lexorbital-lab-wouter";
-const basePath =
-  import.meta.env.PROD ? `/${repoName}` : "";
+const basePath = import.meta.env.PROD ? `/${repoName}/` : "";
 
 const rootElement = document.getElementById("root");
 
