@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+:root {
+  --color-pampas: #f2f1e9;
+  --color-martinique: #2f2644;
+  --color-pomegranate: #e74f12;
+  --color-copperfield: #d58860;
+  --color-background: #f2f1e9;
+  --color-surface: #ffffff;
+  --color-primary: #e74f12;
+  --color-primary-light: #d58860;
+  --color-dark: #2f2644;
+  --color-text: #2f2644;
+  --color-text-light: #6b7280;
+  --color-border: #e5e7eb;
+  --font-sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-mono: "SF Mono", Monaco, "Cascadia Code", "Roboto Mono", Consolas, "Courier New", monospace;
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+  --spacing-2xl: 3rem;
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --shadow-sm: 0 1px 2px 0 rgb(47 38 68 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(47 38 68 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(47 38 68 / 0.1);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  background-color: var(--color-background);
+  color: var(--color-text);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-dark);
+  border-radius: var(--radius-sm);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-primary);
+}
