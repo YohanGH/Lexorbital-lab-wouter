@@ -1,8 +1,15 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
+import { Router } from "wouter";
 
 import "./styles/index.css";
 import App from "./App.tsx";
+
+// Base path for GitHub Pages
+// Must match the base path in vite.config.ts
+const repoName = "Lexorbital-lab-wouter";
+const basePath =
+  import.meta.env.PROD ? `/${repoName}` : "";
 
 const rootElement = document.getElementById("root");
 
@@ -12,6 +19,8 @@ if (rootElement === null) {
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <App />
+    <Router base={basePath}>
+      <App />
+    </Router>
   </StrictMode>
 );

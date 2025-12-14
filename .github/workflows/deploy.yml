@@ -1,0 +1,84 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+      - master
+  workflow_dispatch: # Allow manual trigger
+
+# Explicit permissions for security
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow only one concurrent deployment
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build:
+    name: Build and Deploy
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    steps:
+      # ========================================================================
+      # 1. Checkout repository
+      # ========================================================================
+      - name: 📥 Checkout repository
+        uses: actions/checkout@v4
+
+      # ========================================================================
+      # 2. Setup pnpm
+      # ========================================================================
+      - name: 📦 Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9
+
+      # ========================================================================
+      # 3. Setup Node.js
+      # ========================================================================
+      - name: 🟢 Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "pnpm"
+
+      # ========================================================================
+      # 4. Install dependencies
+      # ========================================================================
+      - name: 📥 Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      # ========================================================================
+      # 5. Build project
+      # ========================================================================
+      - name: 🔨 Build project
+        run: pnpm build
+
+      # ========================================================================
+      # 6. Setup GitHub Pages
+      # ========================================================================
+      - name: ⚙️ Setup Pages
+        uses: actions/configure-pages@v4
+
+      # ========================================================================
+      # 7. Upload artifact to GitHub Pages
+      # ========================================================================
+      - name: 📤 Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./dist
+
+      # ========================================================================
+      # 8. Deploy to GitHub Pages
+      # ========================================================================
+      - name: 🚀 Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
