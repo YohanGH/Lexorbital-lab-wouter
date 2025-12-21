@@ -4,10 +4,10 @@ import tailwindcss from '@tailwindcss/vite'
 import { copyFileSync } from 'fs'
 import { join } from 'path'
 
-// Base path for GitHub Pages
-// If the repo name is "Lexorbital-lab-wouter", GitHub Pages will serve it from /Lexorbital-lab-wouter/
-const repoName = 'Lexorbital-lab-wouter'
-const base = process.env.NODE_ENV === 'production' ? `/${repoName}/` : '/'
+// Base path: use relative paths for maximum compatibility
+// This works both on custom domains (served at root) and GitHub Pages Project Pages
+// Vite will generate relative asset paths (./assets/...) instead of absolute paths
+const base = './'
 
 // Plugin to create 404.html for GitHub Pages SPA routing
 // GitHub Pages serves 404.html for any route that doesn't exist
